@@ -10,10 +10,10 @@ hist(h,150);
 
 %GMM的构造
 %Step 1.首先根据经验来分别对男女生的均值、方差和权值进行初始化
- mu1_first=180;sigmal_first=8;w1_first=0.60;%男生的
- mu2_first=160;sigma2_first=10;w2_first=0.4;%以我们学校理工院校为例
+ mu1_first=180;sigmal_first=8;w1_first=0.60;
+ mu2_first=160;sigma2_first=10;w2_first=0.4;
  
- iteration=200;%设置迭代次数
+ iteration=500;%设置迭代次数
  outcome=zeros(iteration,6);%定义一个数组来存储每次的迭代结果
  outcome(1,1)=mu1_first;outcome(1,4)=mu2_first;
  outcome(1,2)=sigmal_first;outcome(1,5)=sigma2_first;
